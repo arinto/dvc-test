@@ -1,0 +1,4 @@
+['remote "myremote"']
+url = gs://dvc-eval/myremote
+[core]
+remote = myremote
