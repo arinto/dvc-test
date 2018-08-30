@@ -1,11 +1,11 @@
 cmd: python featurization.py data.tsv matrix.pkl
 deps:
-- md5: 73de8d15fee65c47db4acdf217efc858
+- md5: 85f9fca2da1f2c9968838316fbdb90c2
   path: featurization.py
 - md5: 58245acfdc65b519c44e37f7cce12931
   path: data.tsv
-md5: aad834b2b6b966a583b996cc93b4cf24
+md5: d9856a02ea102605969115c9a524f860
 outs:
 - cache: true
-  md5: 6d687931956f32233c6f8eda14074281
+  md5: 0af09634f2b97f3f0ba2d4e5ea53a909
   path: matrix.pkl
