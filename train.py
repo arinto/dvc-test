@@ -17,6 +17,7 @@ input = sys.argv[1]
 output = sys.argv[2]
 seed = 20170426
 
+
 with open(input, 'rb') as fd:
     matrix = pickle.load(fd)
 
@@ -27,7 +28,7 @@ sys.stderr.write('Input matrix size {}\n'.format(matrix.shape))
 sys.stderr.write('X matrix size {}\n'.format(x.shape))
 sys.stderr.write('Y matrix size {}\n'.format(labels.shape))
 
-clf = RandomForestClassifier(n_estimators=100, n_jobs=2, random_state=seed)
+clf = RandomForestClassifier(n_estimators=101, n_jobs=2, random_state=seed)
 clf.fit(x, labels)
 
 with open(output, 'wb') as fd:
